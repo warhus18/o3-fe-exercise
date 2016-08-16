@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<meta name="robots" content="noindex">
+	<title>Responsive Design</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+	<header class="header clearfix">
+		<h1>Responsive Design</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<div class="hamburger"><span></span></div>
+		</nav>
+	</header>
+
+
+	<div class="page-wrap clearfix">	
+		
+		<article class="main-story clearfix">
+			<div class="banner">
+			  	<img src="images/guy-1600x780.jpg" alt="Man Working"/>
+			</div>
+			<div class="story-intro">
+				<h1>Most Important Story</h1>
+				<p>This article has the most visual weight.</p>
+			</div>	 
+		</article>
+		
+		<section class="sub-stories clearfix">
+			<article class="sub-story">
+				<div class="media">
+				   	<picture>
+				  		<source media="(min-width: 300px)" srcset="images/clothes-200x200.jpg">
+				  		<source media="(min-width: 600px)" srcset="images/clothes-250x330.jpg">
+				  		<source media="(min-width: 800px)" srcset="images/clothes-500x660.jpg">
+				  		<img src="images/clothes-500x660.jpg" alt="Hanging Clothes">
+					</picture>
+				</div>
+				<div class="sub-story-intro">
+					<h2>Less Important Story</h2>
+					<p>This story has less visual weight.</p>
+				</div>
+		 	</article>
+		 
+			<article class="sub-story">
+				<div class="media">
+				   	<picture>
+				  		<source media="(min-width: 300px)" srcset="images/yeti-200x200.jpg">
+				  		<source media="(min-width: 600px)" srcset="images/yeti-250x330.jpg">
+				  		<source media="(min-width: 800px)" srcset="images/yeti-500x660.jpg">
+				  		<img src="images/yeti-500x660.jpg" alt="Yeti in Nature">
+					</picture>
+				</div>
+				<div class="sub-story-intro">
+					<h2>Less Important Story</h2>
+					<p>This story has less visual weight.</p>
+				</div>
+			</article>
+		 
+		 	<article class="sub-story">
+				<div class="media">
+					<picture>
+				  		<source media="(min-width: 300px)" srcset="images/boat-200x200.jpg">
+				  		<source media="(min-width: 600px)" srcset="images/boat-250x330.jpg">
+				  		<source media="(min-width: 800px)" srcset="images/boat-500x660.jpg">
+				  		<img src="images/boat-500x660.jpg" alt="Sail Boat">
+					</picture>
+				</div>
+				<div class="sub-story-intro">
+					<h2>Less Important Story</h2>
+					<p>This story has less visual weight.</p>
+				</div>
+		 	</article> 
+		</section>
+	  
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
