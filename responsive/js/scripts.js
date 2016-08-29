@@ -20,7 +20,7 @@ $(function() {
         });
 
         // swap the media picture
-        $(this).fadeOut(400,function () {
+        $(this).fadeOut(function () {
 
             // replace all image sources
             $(this).find('source').each(function () {
@@ -34,11 +34,11 @@ $(function() {
             $(this).find('img').attr('srcset', bannerImage);
 
             // fade image in
-            $(this).fadeIn(400);
+            $(this).fadeIn();
         });
 
         // swap the banner picture
-        $('.banner picture').fadeOut(200,function () {
+        $('.banner picture').fadeOut(function () {
 
             // replace all image sources
             $('.banner picture').find('source').each(function () {
@@ -52,7 +52,7 @@ $(function() {
             $('.banner picture').find('img').attr('srcset', mediaImage);
 
             // fade image in
-            $('.banner picture').fadeIn(200);
+            $('.banner picture').fadeIn();
         });      
     });
 });
